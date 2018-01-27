@@ -4,11 +4,15 @@ You must give a short explanation for each answer.
 
 1) Create a reference to an array of integers named "cat".
 
+answer = var cat = []
+
 2) What is the output of the following code fragment?
 
 var cat = [2, 4, 6, 8];
 
 console.log(cat[0] + " " + cat[1]);
+
+answer = 2 4 (the console log is only to put the values of cat[0] and cat[1] in string)
 
 3) What is the output of the following code fragment?
 
@@ -19,14 +23,20 @@ y[1] = 88;
 
 console.log(y[0] + " " + y[1] + " " + y[5]);
 
+answer = 34 38 undefined (the console log just puts down those value so you get 34 and 88 but since y[5] was not defined you get undefined)
+
 4) What is the output of the following code fragment?
 
 var zip = [7, 3, 4, 1, 9];
 
 console.log(zip[2+1]);
 
+answer = 1 (The zip[2+1] really just equals to zip[3])
+
 5) What is the output of the following code fragment?
 
 var x = [7, 3, 4, , , , , , ];
 
 console.log((x[0] + x[1]) + " " + x[5]);
+
+answer = 10 underfined (it adds x[0] and x[1] which makes 10 but x[5] wasn't defined)
