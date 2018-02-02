@@ -99,15 +99,17 @@ function moreArrayMethods(priorities){
 	//Print the parameter that is being passed through the function
 	console.log(priorities);
 	//Use the method sort() to sort your priorities
-	//priorities.sort();
+	priorities.sort();
 	//Use the method indexOf() to replace "Not Going to Class" to "Going to Class"
-	priorities.indexOf("School")
+	priorities[priorities.indexOf("Not Going to Class")] = "Going to Class"
 	//Use the method pop() to remove the item at the end of the array
-
+	priorities.pop();
 	//Use the method push() to add a priority that is important to the success of this class and don't forget to sort() them afterwards!
-
+	
+	priorities.push("Study") ;
+	priorities.sort();	
 	//Return the changed array
-	return;
+	return priorities ;
 }
 
 console.log(moreArrayMethods(["Zero Play", "Sleeping", "HW", "Work", "School", "Planning For Future", "Not Going to Class"]));
